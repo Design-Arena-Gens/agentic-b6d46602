@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+@theme inline {
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    font-family: var(--font-body), system-ui, -apple-system, Segoe UI, sans-serif;
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading), "Times New Roman", serif;
+  }
+}
